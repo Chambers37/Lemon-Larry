@@ -1,0 +1,346 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items:center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrollbars on the body */
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+.navbar{
+  width: 100%;
+  height: 10vh;
+  font-size: 2vh;
+  align-items: center;
+  display:flex;
+  justify-content: space-evenly;
+  border: solid thin red;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, red, black);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar > a:hover{
+  text-shadow: 7px -7px 3px rgba(255, 255, 255, 1);
+  color:black;
+}
+
+.loginForm {
+ height: 50vh;
+  display: flex;
+}
+
+.login{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+}
+
+.navbar > a:hover{
+  text-shadow: 7px -7px 3px rgba(255, 255, 255, 1);
+  color:black;
+}
+
+/* a:hover + .navbar {
+  opacity: 0.5;
+} */
+
+.container {
+  width: 400px;
+  background-image: linear-gradient( red, black);
+  border-radius: 8px;
+  box-shadow: 3vh 3vh 4vh rgba(255, 255, 255, 0.484);
+  padding: 20px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.login-section h1 {
+  color: white;
+  text-shadow: 9px -7px 5px rgba(0, 0, 0, 0.63);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.login-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input,
+.register-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: antiquewhite;
+}
+
+.login-button,
+.register-button, .logout-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.register-button:hover,
+.logout-button:hover {
+  background-color: antiquewhite;
+  color:red;
+}
+
+.forgot-password,
+.toggle-link {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot-password:hover,
+.toggle-link:hover {
+  text-shadow:  2vh -1vh 4px rgb(255, 0, 0);
+  color:white;
+}
+
+p{
+  color:white;
+}
+
+.welcome-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:3vh;
+  text-align: center;
+}
+
+.welcome-content {
+  width: 400px;
+  background-image: linear-gradient( red, black);
+  border-radius: 8px;
+  box-shadow: 3vh 3vh 4vh rgba(255, 255, 255, 0.484);
+  padding: 20px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+h3{
+  color:white;
+}
+
+/* div.cbox{
+  display: flex;
+  padding-top: 40vh;
+  color: red;
+} */
+
+.allMessages {
+  box-sizing: border-box;
+  max-width: 80vw; /* Ensure the message container doesn't exceed this width */
+  margin: 10px auto; /* Center the message container with some spacing */
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  list-style-type: none; /* Remove default bullet points from list */
+  padding: 0; /* Remove default padding from ul */
+}
+
+.theList {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.singleMsg {
+  box-sizing: border-box;
+  display: block; /* Border only around the content */
+  width: fit-content;
+  max-width: 100%; /* Allow it to take full width of its container if needed */
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  word-wrap: break-word; /* Ensure long words are broken and wrapped */
+  overflow-wrap: break-word; /* Ensure text wraps within the container */
+}
+
+
+div.msgbutton{
+  display:flex;
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  top: 90vh;
+  right: 7vh;
+  left: 0;
+  bottom: 0;
+  color:red;
+}
+
+#MessagesTitle{
+  font-family:lemon;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 3vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  color: red;
+}
+
+button{
+  color: rgb(0, 0, 0);
+  background-color: bisque;
+  border: solid, red;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+button:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
+  border: solid, red;
+  border-radius: 10px;
+  font-family:'lemon', 'Arial Narrow', Arial, sans-serif;
+  right: 10vh;
+  font-size: large;
+  box-shadow: 1px 1px 10px 5px rgba(251, 0, 0, 0.934);
+}
+
+button:active{
+  color: rgb(0, 0, 0);
+  background-color: bisque;
+  border: solid, red;
+  border-radius: 10px;
+  font-size: medium;
+  right: 10vh;
+}
+
+#msgInput{
+  background-color: rgb(239, 225, 208);
+  border-radius: 10px;
+  border: solid, red;
+  margin-right: 5px;
+}
+
+section {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column; /* Stack messages vertically */
+  width: 90%;
+  height:40vh;
+  margin-top: 9vh;
+  margin-left: 6vh;
+  margin-right: 6vh;
+  margin-bottom: 0vh;
+  border-radius: 3vh;
+  background-color: bisque;
+  overflow-y: auto; /* Add scroll if messages exceed section height */
+}
+
+div.msgbox{
+  height: 100%;
+  padding: 1vh;
+}
+
+@font-face {
+  font-family:lemon ;
+  src: url(/src/fonts/lemonade.ttf);
+}
+
+@font-face {
+  font-family:cossines ;
+  src: url(/src/fonts/Cossines-Regular.otf);
+}
+
+.about-us-container{
+  display: flex;
+  flex-direction: column;
+  margin: 3vh;
+}
+
+#about-p{
+  font-size:1.9vh;
+  padding: 1vh;
+  margin: 0;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.profileImage {
+  width: 100%;
+  max-height: 99%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+#aboutUsH3{
+  font-size: 1.5vh;
+  margin: 0;
+  padding: 0;
+  color: black
+}
+
+.picHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-height: 19vh;
+  width: 25%;
+  overflow: hidden;
+  background-image: linear-gradient(red, black);
+  border-radius: 1vh;
+  margin: 1vh
+}
+.profile-container{
+  display:flex;
+  height:20vh;
+  box-sizing: border-box;
+  width:100%;
+  border: red solid thin;
+  border-radius: 1vh;
+  margin: 1vh;
+}
+
+.info-container{
+  width: 75%;
+}
