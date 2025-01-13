@@ -3,7 +3,7 @@
 // import { useState, useEffect, useRef } from "react";
 // import { useNavigate } from "react-router-dom";
 
-// // const socket = io.connect("http://localhost:3001");
+// const socket = io.connect("http://localhost:3001");
 
 // const Chat = () => {
 //   const [messageReceived,setMessageReceived] = useState([])

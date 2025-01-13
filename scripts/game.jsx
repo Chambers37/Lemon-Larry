@@ -251,7 +251,7 @@ if (!renderer.getContext()) {
     
     // Add hover effect
     startButton.addEventListener('mouseover', () => {
-  startButton.style.boxShadow = '0px 0px 50px rgba(255, 0, 0, 1)'; 
+  startButton.style.boxShadow = '0px 0px 30px rgba(255, 0, 0, 1)'; 
   startButton.style.color = '#000000';
 });
 
