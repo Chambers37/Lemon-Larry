@@ -332,7 +332,7 @@ export class World extends THREE.Group {
           this.lemonSound.stop(); // Stop if it's already playing to restart it
         }
         this.lemonSound.play(); 
-          player.score += 13;
+          player.score += 1;
 
           // Update the score display directly
           window.scoreDisplay.textContent = `Score: ${player.score}`;
